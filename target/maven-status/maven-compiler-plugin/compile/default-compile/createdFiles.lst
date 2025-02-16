@@ -1,0 +1,5 @@
+com/income/app/web/ItemController.class
+com/income/app/App.class
+com/income/app/config/WebMvcConfig.class
+com/income/app/model/Item.class
+com/income/app/service/ItemService.class
