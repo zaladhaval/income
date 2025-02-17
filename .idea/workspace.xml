@@ -4,44 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90733c57-6788-407c-adef-fea15e046196" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/CarRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/CarRestOps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/CarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/CarServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/base/FJV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/base/IncomeBaseRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/base/IncomeBaseRestOps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/base/IncomeBaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/base/IncomeBaseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/base/IncomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/base/IncomeObjectPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/base/IncomeObjectPageRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsRestOps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/callcontext/CallContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/AbstractEnumConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/EnumMarker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/FuleTypeConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/IncomeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/UserType.java" afterDir="false" />
+    <list default="true" id="90733c57-6788-407c-adef-fea15e046196" name="Changes" comment="Crude added">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dashboard.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meta/css.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meta/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meta/javascripts.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meta/sidebar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/CarRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/base/IncomeBaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/base/IncomeBaseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/FuleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/FuleType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/GearType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/GearType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/web/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/web/ItemService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/web/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/web/ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/alerts.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/blank-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/carlisting.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/buttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cards.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/form-elements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/icons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/invoice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mdi-icons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/notification.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/plainadmin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/settings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/signin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/typography.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view-items.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +88,7 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/home/dhaval/Development/projects/My/rental/src/main/java/com/car/rental",
-    "last_opened_file_path": "/home/dhaval/Development/projects/My/rental",
+    "last_opened_file_path": "/home/dhaval/Development/projects/My/rental/src/main/webapp/WEB-INF/jsp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -104,9 +99,19 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.car.rental.callcontext" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="RentalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -134,7 +139,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739803201604</updated>
-      <workItem from="1739803202634" duration="5923000" />
+      <workItem from="1739803202634" duration="8763000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -144,15 +149,36 @@
       <option name="project" value="LOCAL" />
       <updated>1739803457135</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Crude added">
+      <option name="closed" value="true" />
+      <created>1739813062534</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739813062534</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Crude added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Crude added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

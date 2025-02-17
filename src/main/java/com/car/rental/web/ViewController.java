@@ -1,6 +1,6 @@
 package com.car.rental.web;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.car.rental.asset.CarRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -8,13 +8,23 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class ViewController {
 
-  @Autowired
-  ItemService itemService;
+    CarRepository carRepository;
 
-  @RequestMapping("/view-items")
-  public ModelAndView viewBooks(ModelAndView model) {
-    model.setViewName("alerts");
-    model.addObject("items", itemService.getAll());
-    return model;
-  }
+    ViewController(CarRepository carRepository) {
+        this.carRepository = carRepository;
+    }
+
+    @RequestMapping("/car")
+    public ModelAndView card(ModelAndView model) {
+        model.setViewName("carlisting");
+        model.addObject("cars", carRepository.findAll());
+        return model;
+    }
+
+    @RequestMapping("/dashboard")
+    public ModelAndView dashboard(ModelAndView model) {
+        model.setViewName("dashboard");
+
+        return model;
+    }
 }
