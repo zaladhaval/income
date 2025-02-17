@@ -1,4 +1,6 @@
 package com.car.rental.asset;
 
-public interface CarRepository {
+import com.car.rental.base.IncomeBaseRepository;
+
+public interface CarRepository extends IncomeBaseRepository<Car> {
 }

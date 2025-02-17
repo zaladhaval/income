@@ -1,4 +1,10 @@
 package com.car.rental.base;
 
-public interface IncomeBaseRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.repository.NoRepositoryBean;
+
+@NoRepositoryBean
+public interface IncomeBaseRepository<T extends IncomeBase> extends JpaRepository<T, Long>,
+        JpaSpecificationExecutor<T> {
 }

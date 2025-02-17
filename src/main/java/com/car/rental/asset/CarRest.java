@@ -1,18 +1,15 @@
 package com.car.rental.asset;
 
-import com.car.rental.base.IncomeBase;
+import com.car.rental.base.IncomeBaseRest;
 import com.car.rental.enums.FuleType;
 import com.car.rental.enums.GearType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
 
 import java.io.Serial;
 
-@Entity
-public class Car extends IncomeBase {
+public class CarRest extends IncomeBaseRest {
 
     @Serial
-    private static final long serialVersionUID = -1352726589903722591L;
+    private static final long serialVersionUID = -1352126589903722591L;
 
     private long statusId;
 
@@ -20,7 +17,6 @@ public class Car extends IncomeBase {
 
     private long purchaseDate;
 
-    @Column(unique = true, nullable = false)
     private String carNumber;
 
     private long brandId;
