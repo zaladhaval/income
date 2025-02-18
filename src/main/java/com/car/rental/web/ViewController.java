@@ -1,11 +1,12 @@
 package com.car.rental.web;
 
-import com.car.rental.asset.CarRepository;
+import com.car.rental.car.CarRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
+@RequestMapping("/")
 public class ViewController {
 
     CarRepository carRepository;
@@ -14,10 +15,9 @@ public class ViewController {
         this.carRepository = carRepository;
     }
 
-    @RequestMapping("/car")
+    @RequestMapping("/carview")
     public ModelAndView card(ModelAndView model) {
-        model.setViewName("carlisting");
-        model.addObject("cars", carRepository.findAll());
+        model.setViewName("cars");
         return model;
     }
 
