@@ -1,0 +1,35 @@
+NameVirtualHost         *:443
+AddOutputFilterByType DEFLATE application/json
+Listen 443
+SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5
+SSLSessionCache "shmcb:C:/xampp/apache/logs/ssl_scache(512000)"
+SSLSessionCacheTimeout  300
+
+<VirtualHost *:443>
+Header set Access-Control-Allow-Origin "*"
+        SSLProxyVerify none 
+        ServerName  nmwshopapp.com
+        ServerAdmin admin@example.com
+        ErrorLog "logs/error.log"
+        TransferLog "logs/access.log"
+        Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains"
+        SSLEngine on
+        SSLProxyEngine on
+        SSLProtocol all -SSLv2
+        SSLHonorCipherOrder on
+        SSLCipherSuite "EECDH+ECDSA+AESGCM:EECDH+aRSA+AESGCM:EECDH+ECDSA+SHA384:EECDH+ECDSA+SHA256:EECDH+aRSA+SHA384:EECDH+aRSA+SHA256:EECDH+aRSA+RC4:EECDH:EDH+aRSA:RC4:!aNULL:!eNULL:!LOW:!3DES:!MD5:!EXP:!PSK:!SRP:!DSS"
+
+        SSLCertificateFile "conf/nmwshopapp_com.crt"
+        SSLCertificateKeyFile "conf/nmwshopapp_com.key"
+        SSLCertificateChainFile "conf/nmwshopapp_com.ca-bundle"
+
+        SSLProxyCheckPeerCN off
+        CustomLog "logs/cookie_log" cookie
+
+        BrowserMatch "MSIE [2-5]" nokeepalive ssl-unclean-shutdown downgrade-1.0 force-response-1.0
+        CustomLog "logs/ssl_request.log" "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\" %{msec_frac}t"
+
+        ProxyPass /pinnacle http://localhost:8080/pinnacle/ Keepalive=On min=40 timeout=3600
+        ProxyPassReverse /pinnacle http://localhost:8080/pinnacle/
+
+</VirtualHost>
