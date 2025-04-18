@@ -15,15 +15,18 @@ public class BookingsServiceImpl extends IncomeBaseServiceImpl<Bookings, Booking
     @Override
     protected Bookings convertToDomain(CallContext callContext, BookingsRest createRequest) {
         Bookings domain = super.convertToDomain(callContext, createRequest);
-        domain.setBookingId(createRequest.getBookingId());
+        domain.setBookingNumber(createRequest.getBookingNumber());
         domain.setCustomerId(createRequest.getCustomerId());
         domain.setCarId(createRequest.getCarId());
-        domain.setBookingStartDate(createRequest.getBookingStartDate());
-        domain.setBookingEndDate(createRequest.getBookingEndDate());
-        domain.setStatusId(createRequest.getStatusId());
-        domain.setBookingAmount(createRequest.getBookingAmount());
-        domain.setCreditedAmount(createRequest.getCreditedAmount());
-        domain.setCreditedDate(createRequest.getCreditedDate());
+        domain.setPickupDate(createRequest.getPickupDate());
+        domain.setReturnDate(createRequest.getReturnDate());
+        domain.setStatus(createRequest.getStatus());
+        domain.setTotalAmount(createRequest.getTotalAmount());
+        domain.setPaidAmount(createRequest.getPaidAmount());
+        domain.setPaymentDate(createRequest.getPaymentDate());
+        domain.setPickupLocation(createRequest.getPickupLocation());
+        domain.setReturnLocation(createRequest.getReturnLocation());
+        domain.setNotes(createRequest.getNotes());
         return domain;
     }
 

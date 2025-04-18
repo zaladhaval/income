@@ -5,7 +5,9 @@ public enum FuleType implements IncomeEnum {
     PETROL(0),
     DIESEL(1),
     EV(2),
-    HYBRID(3);
+    HYBRID(3),
+    ELECTRIC(4);
+    
 
     private final int id;
 

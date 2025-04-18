@@ -1,8 +1,10 @@
 package com.car.rental.bookings;
 
 import com.car.rental.base.IncomeBaseRest;
+import com.car.rental.enums.BookingStatus;
 
 import java.io.Serial;
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class BookingsRest extends IncomeBaseRest {
@@ -10,30 +12,40 @@ public class BookingsRest extends IncomeBaseRest {
     @Serial
     private static final long serialVersionUID = -1352726589921722591L;
 
-    private String bookingId;
+    private String bookingNumber;
 
     private long customerId;
 
     private long carId;
 
-    private Date bookingStartDate;
+    private String carName;
 
-    private Date bookingEndDate;
+    private String customerName;
 
-    private long statusId;
+    private Date pickupDate;
 
-    private double bookingAmount;
+    private Date returnDate;
 
-    private double creditedAmount;
+    private BookingStatus status;
 
-    private Date creditedDate;
+    private BigDecimal totalAmount;
 
-    public String getBookingId() {
-        return bookingId;
+    private BigDecimal paidAmount;
+
+    private Date paymentDate;
+
+    private String pickupLocation;
+
+    private String returnLocation;
+
+    private String notes;
+
+    public String getBookingNumber() {
+        return bookingNumber;
     }
 
-    public void setBookingId(String bookingId) {
-        this.bookingId = bookingId;
+    public void setBookingNumber(String bookingNumber) {
+        this.bookingNumber = bookingNumber;
     }
 
     public long getCustomerId() {
@@ -52,51 +64,91 @@ public class BookingsRest extends IncomeBaseRest {
         this.carId = carId;
     }
 
-    public Date getBookingStartDate() {
-        return bookingStartDate;
+    public String getCarName() {
+        return carName;
     }
 
-    public void setBookingStartDate(Date bookingStartDate) {
-        this.bookingStartDate = bookingStartDate;
+    public void setCarName(String carName) {
+        this.carName = carName;
     }
 
-    public Date getBookingEndDate() {
-        return bookingEndDate;
+    public String getCustomerName() {
+        return customerName;
     }
 
-    public void setBookingEndDate(Date bookingEndDate) {
-        this.bookingEndDate = bookingEndDate;
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 
-    public long getStatusId() {
-        return statusId;
+    public Date getPickupDate() {
+        return pickupDate;
     }
 
-    public void setStatusId(long statusId) {
-        this.statusId = statusId;
+    public void setPickupDate(Date pickupDate) {
+        this.pickupDate = pickupDate;
     }
 
-    public double getBookingAmount() {
-        return bookingAmount;
+    public Date getReturnDate() {
+        return returnDate;
     }
 
-    public void setBookingAmount(double bookingAmount) {
-        this.bookingAmount = bookingAmount;
+    public void setReturnDate(Date returnDate) {
+        this.returnDate = returnDate;
     }
 
-    public double getCreditedAmount() {
-        return creditedAmount;
+    public BookingStatus getStatus() {
+        return status;
     }
 
-    public void setCreditedAmount(double creditedAmount) {
-        this.creditedAmount = creditedAmount;
+    public void setStatus(BookingStatus status) {
+        this.status = status;
     }
 
-    public Date getCreditedDate() {
-        return creditedDate;
+    public BigDecimal getTotalAmount() {
+        return totalAmount;
     }
 
-    public void setCreditedDate(Date creditedDate) {
-        this.creditedDate = creditedDate;
+    public void setTotalAmount(BigDecimal totalAmount) {
+        this.totalAmount = totalAmount;
+    }
+
+    public BigDecimal getPaidAmount() {
+        return paidAmount;
+    }
+
+    public void setPaidAmount(BigDecimal paidAmount) {
+        this.paidAmount = paidAmount;
+    }
+
+    public Date getPaymentDate() {
+        return paymentDate;
+    }
+
+    public void setPaymentDate(Date paymentDate) {
+        this.paymentDate = paymentDate;
+    }
+
+    public String getPickupLocation() {
+        return pickupLocation;
+    }
+
+    public void setPickupLocation(String pickupLocation) {
+        this.pickupLocation = pickupLocation;
+    }
+
+    public String getReturnLocation() {
+        return returnLocation;
+    }
+
+    public void setReturnLocation(String returnLocation) {
+        this.returnLocation = returnLocation;
+    }
+
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
     }
 }

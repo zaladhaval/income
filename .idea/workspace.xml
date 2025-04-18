@@ -5,11 +5,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90733c57-6788-407c-adef-fea15e046196" name="Changes" comment="Template updated">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingStatusRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/PaymentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/config/DataInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/UserCreateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/UserUpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/dashboard/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/dashboard/DashboardStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/dashboard/RecentBookingDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/BookingStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/BookingStatusConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/CarStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/CarStatusConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/JwtRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/JwtTokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/MessageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/SignupRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/UserSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dashboard.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meta/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/test.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/RentalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/RentalApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/Bookings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/Bookings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsRestOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsRestOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarRestOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarRestOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/FuleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/FuleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/UserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/web/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/web/ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +98,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2tAmM30WCnHJVAIY6u4FxE1vav7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -118,7 +173,7 @@
       <updated>1739803201604</updated>
       <workItem from="1739803202634" duration="10089000" />
       <workItem from="1739899228214" duration="10269000" />
-      <workItem from="1745001857005" duration="1010000" />
+      <workItem from="1745001857005" duration="3691000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -168,7 +223,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739908099324</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Template updated">
+      <option name="closed" value="true" />
+      <created>1745003133702</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745003133702</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Template updated">
+      <option name="closed" value="true" />
+      <created>1745003239721</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745003239721</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +258,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="init" />
     <MESSAGE value="Crude added" />
     <MESSAGE value="Template updated" />
@@ -199,6 +271,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/car/rental/config/CustomRequestMappingHandlerMapping.java</url>
           <line>43</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/car/rental/security/AuthController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

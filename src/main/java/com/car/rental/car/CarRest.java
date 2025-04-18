@@ -1,17 +1,19 @@
 package com.car.rental.car;
 
 import com.car.rental.base.IncomeBaseRest;
+import com.car.rental.enums.CarStatus;
 import com.car.rental.enums.FuleType;
 import com.car.rental.enums.GearType;
 
 import java.io.Serial;
+import java.math.BigDecimal;
 
 public class CarRest extends IncomeBaseRest {
 
     @Serial
     private static final long serialVersionUID = -1352126589903722591L;
 
-    private long statusId;
+    private CarStatus status;
 
     private String description;
 
@@ -19,7 +21,7 @@ public class CarRest extends IncomeBaseRest {
 
     private String carNumber;
 
-    private long brandId;
+    private String brand;
 
     private String model;
 
@@ -31,13 +33,17 @@ public class CarRest extends IncomeBaseRest {
 
     private GearType gearType;
 
+    private BigDecimal dailyRate;
 
-    public long getStatusId() {
-        return statusId;
+    private String imageUrl;
+
+
+    public CarStatus getStatus() {
+        return status;
     }
 
-    public void setStatusId(long statusId) {
-        this.statusId = statusId;
+    public void setStatus(CarStatus status) {
+        this.status = status;
     }
 
     public String getDescription() {
@@ -52,8 +58,8 @@ public class CarRest extends IncomeBaseRest {
         return purchaseDate;
     }
 
-    public void setPurchaseDate(long acquisitionDate) {
-        this.purchaseDate = acquisitionDate;
+    public void setPurchaseDate(long purchaseDate) {
+        this.purchaseDate = purchaseDate;
     }
 
     public String getCarNumber() {
@@ -64,12 +70,12 @@ public class CarRest extends IncomeBaseRest {
         this.carNumber = carNumber;
     }
 
-    public long getBrandId() {
-        return brandId;
+    public String getBrand() {
+        return brand;
     }
 
-    public void setBrandId(long brandId) {
-        this.brandId = brandId;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     public String getModel() {
@@ -110,5 +116,21 @@ public class CarRest extends IncomeBaseRest {
 
     public void setGearType(GearType gearType) {
         this.gearType = gearType;
+    }
+
+    public BigDecimal getDailyRate() {
+        return dailyRate;
+    }
+
+    public void setDailyRate(BigDecimal dailyRate) {
+        this.dailyRate = dailyRate;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }

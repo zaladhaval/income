@@ -10,15 +10,18 @@ public class BookingsRestOps extends IncomeBaseRestOps<Bookings, BookingsRest> {
     @Override
     public BookingsRest toGetResponse(CallContext callContext, Bookings domainModel, boolean listCall) {
         BookingsRest rest = super.toGetResponse(callContext, domainModel, listCall);
-        rest.setBookingId(domainModel.getBookingId());
+        rest.setBookingNumber(domainModel.getBookingNumber());
         rest.setCustomerId(domainModel.getCustomerId());
         rest.setCarId(domainModel.getCarId());
-        rest.setBookingStartDate(domainModel.getBookingStartDate());
-        rest.setBookingEndDate(domainModel.getBookingEndDate());
-        rest.setStatusId(domainModel.getStatusId());
-        rest.setBookingAmount(domainModel.getBookingAmount());
-        rest.setCreditedAmount(domainModel.getCreditedAmount());
-        rest.setCreditedDate(domainModel.getCreditedDate());
+        rest.setPickupDate(domainModel.getPickupDate());
+        rest.setReturnDate(domainModel.getReturnDate());
+        rest.setStatus(domainModel.getStatus());
+        rest.setTotalAmount(domainModel.getTotalAmount());
+        rest.setPaidAmount(domainModel.getPaidAmount());
+        rest.setPaymentDate(domainModel.getPaymentDate());
+        rest.setPickupLocation(domainModel.getPickupLocation());
+        rest.setReturnLocation(domainModel.getReturnLocation());
+        rest.setNotes(domainModel.getNotes());
         return rest;
     }
 
