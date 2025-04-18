@@ -4,225 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90733c57-6788-407c-adef-fea15e046196" name="Changes" comment="Crude added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/config/CustomRequestMappingHandlerMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cars.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meta/head.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meta/leftsidemenu.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meta/scripts.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meta/topnavbar.jsp" afterDir="false" />
+    <list default="true" id="90733c57-6788-407c-adef-fea15e046196" name="Changes" comment="Template updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/CarRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/CarRestOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarRestOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/asset/CarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/web/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/web/ViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/fullcalendar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/lineicons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/loading-bar.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/materialdesignicons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/morris.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/lineicons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/lineicons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/lineicons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/lineicons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/lineicons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/materialdesignicons-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/materialdesignicons-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/materialdesignicons-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/materialdesignicons-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/materialdesignicons-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/materialdesignicons-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/materialdesignicons-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/materialdesignicons-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/auth/reset-password.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/auth/shape.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/auth/signin-image.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/auth/signup-image.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-1/admin-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-1/admin-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-1/admin-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-1/card-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-1/card-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-1/card-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-2/card-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-2/card-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-2/card-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-4/card-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-4/card-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-4/card-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-5/card-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-5/card-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-6/card-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-6/card-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-6/card-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cards/card-style-6/card-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/clients/client-profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/clients/clients-cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/favicon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/invoice/uideck-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/lead/lead-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/lead/lead-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/lead/lead-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/lead/lead-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/lead/lead-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/lead/lead-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/logo/logo-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/logo/logo-icon-big.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/logo/logo-white.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/logo/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/modals/image-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/products/product-mini-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/products/product-mini-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/products/product-mini-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/products/product-mini-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/products/product-mini-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/profile/profile-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/profile/profile-cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/profile/profile-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/profile/profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/projects/image-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/projects/image-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/projects/image-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/Chart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/dynamic-pie-chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/fullcalendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/jvectormap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/loading-bar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/moment.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/polyfill.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/world-merc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/_common.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/_default.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/_mixin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/_preloader.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/_sidebar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/alerts/_alerts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/auth/_signin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/auth/_signup.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/buttons/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/calendar/_calendar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/cards/_cards.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/dashboards/_dashboards.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/forms/_form-elements.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/header/_header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/icons/_icons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/invoice/_invoice.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/notification/_notification.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/settings/_settings.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/tables/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/typography/_typography.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/carlisting.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dashboard.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meta/css.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meta/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meta/javascripts.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meta/sidebar.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/fullcalendar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/lineicons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/loading-bar.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/materialdesignicons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/morris.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/lineicons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/lineicons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/lineicons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/lineicons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/lineicons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/materialdesignicons-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/materialdesignicons-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/materialdesignicons-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/materialdesignicons-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/materialdesignicons-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/materialdesignicons-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/materialdesignicons-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/materialdesignicons-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/auth/reset-password.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/auth/shape.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/auth/signin-image.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/auth/signup-image.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-1/admin-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-1/admin-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-1/admin-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-1/card-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-1/card-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-1/card-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-2/card-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-2/card-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-2/card-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-4/card-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-4/card-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-4/card-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-5/card-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-5/card-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-6/card-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-6/card-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-6/card-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cards/card-style-6/card-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/clients/client-profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/clients/clients-cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/favicon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/invoice/uideck-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/lead/lead-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/lead/lead-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/lead/lead-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/lead/lead-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/lead/lead-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/lead/lead-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/logo/logo-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/logo/logo-icon-big.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/logo/logo-white.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/logo/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/modals/image-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/products/product-mini-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/products/product-mini-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/products/product-mini-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/products/product-mini-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/products/product-mini-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/profile/profile-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/profile/profile-cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/profile/profile-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/profile/profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/projects/image-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/projects/image-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/projects/image-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/Chart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/dynamic-pie-chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/fullcalendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/jvectormap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/loading-bar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/moment.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/polyfill.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/world-merc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/_common.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/_default.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/_mixin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/_preloader.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/_sidebar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/alerts/_alerts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/auth/_signin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/auth/_signup.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/buttons/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/calendar/_calendar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/cards/_cards.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/dashboards/_dashboards.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/forms/_form-elements.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/header/_header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/icons/_icons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/invoice/_invoice.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/notification/_notification.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/settings/_settings.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/tables/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/typography/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/Bookings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/Bookings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUserRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,9 +57,11 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.RentalApplication (1).executor": "Debug",
     "Spring Boot.RentalApplication.executor": "Debug",
     "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/home/dhaval/Development/projects/My/rental/src/main/java/com/car/rental",
     "last_opened_file_path": "/home/dhaval/Development/projects/My/rental/src/main/webapp/WEB-INF/jsp/meta",
@@ -314,8 +103,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
       </set>
     </attachedChunks>
   </component>
@@ -328,7 +117,8 @@
       <option name="presentableId" value="Default" />
       <updated>1739803201604</updated>
       <workItem from="1739803202634" duration="10089000" />
-      <workItem from="1739899228214" duration="8681000" />
+      <workItem from="1739899228214" duration="10269000" />
+      <workItem from="1745001857005" duration="1010000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -370,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739899589956</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Template updated">
+      <option name="closed" value="true" />
+      <created>1739908099324</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739908099324</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +189,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="init" />
     <MESSAGE value="Crude added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Crude added" />
+    <MESSAGE value="Template updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Template updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

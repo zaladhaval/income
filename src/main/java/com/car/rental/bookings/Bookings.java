@@ -1,6 +1,7 @@
 package com.car.rental.bookings;
 
 import com.car.rental.base.IncomeBase;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.Entity;
 
 import java.io.Serial;
@@ -18,8 +19,10 @@ public class Bookings extends IncomeBase {
 
     private long carId;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd hh:mm:ss a")
     private Date bookingStartDate;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd hh:mm:ss a")
     private Date bookingEndDate;
 
     private long statusId;
@@ -28,6 +31,7 @@ public class Bookings extends IncomeBase {
 
     private double creditedAmount;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date creditedDate;
 
     public String getBookingId() {
