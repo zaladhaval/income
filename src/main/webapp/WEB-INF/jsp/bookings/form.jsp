@@ -103,7 +103,7 @@
                                     <label for="endDate" class="form-label">
                                         <i class="fas fa-calendar-alt me-1"></i>End Date <span class="text-danger">*</span>
                                     </label>
-                                    <input type="date" class="form-control" id="endDate" name="endDate"
+                                    <input type="date" class="form-control" id="endDate"
                                            value="${isEdit ? dateUtils.formatShortDate(booking.endDate) : ''}"
                                            required>
                                     <form:hidden path="endDate" id="endDateHidden" />
@@ -231,7 +231,7 @@ document.getElementById('endDate').addEventListener('change', function() {
     document.getElementById('endDateHidden').value = timestamp;
 });
 
-// Initialize hidden fields on page load if editing
+// Initialize hidden fields on page load
 <c:if test="${isEdit}">
     const startDate = new Date('${dateUtils.formatShortDate(booking.startDate)}');
     if (!isNaN(startDate.getTime())) {
@@ -243,6 +243,23 @@ document.getElementById('endDate').addEventListener('change', function() {
         document.getElementById('endDateHidden').value = endDate.getTime();
     }
 </c:if>
+
+// Initialize hidden fields when user selects dates for new bookings
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize with current values if they exist
+    const startDateInput = document.getElementById('startDate');
+    const endDateInput = document.getElementById('endDate');
+
+    if (startDateInput.value) {
+        const startDate = new Date(startDateInput.value);
+        document.getElementById('startDateHidden').value = startDate.getTime();
+    }
+
+    if (endDateInput.value) {
+        const endDate = new Date(endDateInput.value);
+        document.getElementById('endDateHidden').value = endDate.getTime();
+    }
+});
 
 // Auto-calculate total earning
 function calculateTotal() {
