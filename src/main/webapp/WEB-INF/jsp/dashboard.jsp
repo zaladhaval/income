@@ -1,277 +1,418 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!DOCTYPE html>
-<html lang="en">
+<%@ page import="com.rental.util.DateUtils" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
-<jsp:include page="meta/head.jsp"/>
+<c:set var="pageTitle" value="Dashboard" />
+<c:set var="pageActions">
+    <sec:authorize access="hasAnyRole('ADMIN', 'TECHNICAL')">
+        <div class="btn-group" role="group">
+            <a href="/cars/new" class="btn btn-primary btn-sm">
+                <i class="fas fa-plus me-1"></i>Add Car
+            </a>
+            <a href="/bookings/new" class="btn btn-success btn-sm">
+                <i class="fas fa-calendar-plus me-1"></i>New Booking
+            </a>
+            <a href="/expenses/new" class="btn btn-warning btn-sm">
+                <i class="fas fa-receipt me-1"></i>Add Expense
+            </a>
+        </div>
+    </sec:authorize>
+</c:set>
 
-<body>
-    <!-- Begin page -->
-    <div id="wrapper">
-        <jsp:include page="meta/topnavbar.jsp"/>
-        <jsp:include page="meta/leftsidemenu.jsp"/>
-        <!-- ============================================================== -->
-        <!-- Start Page Content here -->
-        <!-- ============================================================== -->
+<jsp:include page="common/header.jsp" />
 
-        <div class="content-page">
-            <div class="content">
-
-                <!-- Start Content-->
-                <div class="container-fluid">
-                    
-                    <!-- start page title -->
+<sec:authorize access="hasAnyRole('ADMIN', 'TECHNICAL')">
+    <!-- Statistics Cards -->
+    <div class="row mb-4">
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card card-stats success">
+                <div class="card-body">
                     <div class="row">
-                        <div class="col-12">
-                            <div class="page-title-box">
-                                <div class="page-title-right">
-                                    <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item active">Dashboard</li>
-                                    </ol>
-                                </div>
-                                <h4 class="page-title">Dashboard</h4>
+                        <div class="col">
+                            <h5 class="card-title text-uppercase text-muted mb-0">Total Earnings</h5>
+                            <span class="h2 font-weight-bold mb-0">
+                                ₹<fmt:formatNumber value="${dashboardStats.totalEarnings}" type="number" maxFractionDigits="2" minFractionDigits="2" />
+                            </span>
+                        </div>
+                        <div class="col-auto">
+                            <div class="icon icon-shape bg-success text-white rounded-circle shadow">
+                                <i class="fas fa-dollar-sign"></i>
                             </div>
                         </div>
-                    </div>     
-                    <!-- end page title --> 
-
-                    <div class="row">
-                        <div class="col-md-6 col-xl-3">
-                            <div class="widget-rounded-circle card-box">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="avatar-lg rounded-circle bg-soft-primary">
-                                            <i class="fe-car font-22 avatar-title text-primary"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="text-right">
-                                            <h3 class="mt-1"><span data-plugin="counterup">${totalCars}</span></h3>
-                                            <p class="text-muted mb-1 text-truncate">Total Cars</p>
-                                        </div>
-                                    </div>
-                                </div> <!-- end row-->
-                            </div> <!-- end widget-rounded-circle-->
-                        </div> <!-- end col-->
-
-                        <div class="col-md-6 col-xl-3">
-                            <div class="widget-rounded-circle card-box">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="avatar-lg rounded-circle bg-soft-success">
-                                            <i class="fe-check-circle font-22 avatar-title text-success"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="text-right">
-                                            <h3 class="text-dark mt-1"><span data-plugin="counterup">${availableCars}</span></h3>
-                                            <p class="text-muted mb-1 text-truncate">Available Cars</p>
-                                        </div>
-                                    </div>
-                                </div> <!-- end row-->
-                            </div> <!-- end widget-rounded-circle-->
-                        </div> <!-- end col-->
-
-                        <div class="col-md-6 col-xl-3">
-                            <div class="widget-rounded-circle card-box">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="avatar-lg rounded-circle bg-soft-info">
-                                            <i class="fe-users font-22 avatar-title text-info"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="text-right">
-                                            <h3 class="text-dark mt-1"><span data-plugin="counterup">${totalUsers}</span></h3>
-                                            <p class="text-muted mb-1 text-truncate">Total Users</p>
-                                        </div>
-                                    </div>
-                                </div> <!-- end row-->
-                            </div> <!-- end widget-rounded-circle-->
-                        </div> <!-- end col-->
-
-                        <div class="col-md-6 col-xl-3">
-                            <div class="widget-rounded-circle card-box">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="avatar-lg rounded-circle bg-soft-warning">
-                                            <i class="fe-calendar font-22 avatar-title text-warning"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="text-right">
-                                            <h3 class="text-dark mt-1"><span data-plugin="counterup">${totalBookings}</span></h3>
-                                            <p class="text-muted mb-1 text-truncate">Total Bookings</p>
-                                        </div>
-                                    </div>
-                                </div> <!-- end row-->
-                            </div> <!-- end widget-rounded-circle-->
-                        </div> <!-- end col-->
                     </div>
-                    <!-- end row-->
-
-                    <div class="row">
-                        <div class="col-xl-8">
-                            <div class="card-box">
-                                <div class="dropdown float-right">
-                                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
-                                        <i class="mdi mdi-dots-vertical"></i>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a href="/admin/cars" class="dropdown-item">View All Cars</a>
-                                        <a href="/admin/users" class="dropdown-item">View All Users</a>
-                                    </div>
-                                </div>
-                                <h4 class="header-title mb-3">Recent Bookings</h4>
-
-                                <div class="table-responsive">
-                                    <table class="table table-borderless table-hover table-nowrap table-centered m-0">
-                                        <thead class="thead-light">
-                                            <tr>
-                                                <th>Booking #</th>
-                                                <th>Customer</th>
-                                                <th>Car</th>
-                                                <th>Status</th>
-                                                <th>Amount</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="recent-bookings-table">
-                                            <!-- Data will be loaded via AJAX -->
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div> <!-- end col -->
-
-                        <div class="col-xl-4">
-                            <div class="card-box">
-                                <div class="dropdown float-right">
-                                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
-                                        <i class="mdi mdi-dots-vertical"></i>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a href="/admin/cars" class="dropdown-item">View All Cars</a>
-                                    </div>
-                                </div>
-                                <h4 class="header-title mb-3">Car Status</h4>
-
-                                <div class="widget-chart text-center" dir="ltr">
-                                    <div id="car-status-chart" style="height: 250px;" class="morris-chart"></div>
-                                </div>
-                            </div> <!-- end card-box -->
-                        </div> <!-- end col -->
-                    </div>
-                    <!-- end row -->
-                    
-                </div> <!-- container -->
-
-            </div> <!-- content -->
-
-            <jsp:include page="meta/footer.jsp"/>
-
+                </div>
+            </div>
         </div>
 
-        <!-- ============================================================== -->
-        <!-- End Page content -->
-        <!-- ============================================================== -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card card-stats">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="card-title text-uppercase text-muted mb-0">Monthly Earnings</h5>
+                            <span class="h2 font-weight-bold mb-0">
+                                ₹<fmt:formatNumber value="${dashboardStats.monthlyEarnings}" type="number" maxFractionDigits="2" minFractionDigits="2" />
+                            </span>
+                        </div>
+                        <div class="col-auto">
+                            <div class="icon icon-shape bg-primary text-white rounded-circle shadow">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card card-stats warning">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="card-title text-uppercase text-muted mb-0">Monthly Expenses</h5>
+                            <span class="h2 font-weight-bold mb-0">
+                                ₹<fmt:formatNumber value="${dashboardStats.monthlyExpenses}" type="number" maxFractionDigits="2" minFractionDigits="2" />
+                            </span>
+                        </div>
+                        <div class="col-auto">
+                            <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                                <i class="fas fa-receipt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card card-stats ${dashboardStats.netMonthlyProfit >= 0 ? 'success' : 'danger'}">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="card-title text-uppercase text-muted mb-0">Net Monthly Profit</h5>
+                            <span class="h2 font-weight-bold mb-0">
+                                ₹<fmt:formatNumber value="${dashboardStats.netMonthlyProfit}" type="number" maxFractionDigits="2" minFractionDigits="2" />
+                            </span>
+                        </div>
+                        <div class="col-auto">
+                            <div class="icon icon-shape ${dashboardStats.netMonthlyProfit >= 0 ? 'bg-success' : 'bg-danger'} text-white rounded-circle shadow">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- END wrapper -->
 
-    <!-- Right bar overlay-->
-    <div class="rightbar-overlay"></div>
+    <!-- System Overview Cards -->
+    <div class="row mb-4">
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="fas fa-car fa-2x text-primary mb-2"></i>
+                    <h5 class="card-title">Total Cars</h5>
+                    <h3 class="text-primary">${dashboardStats.totalCars}</h3>
+                    <small class="text-muted">${dashboardStats.availableCars} available</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="fas fa-users fa-2x text-success mb-2"></i>
+                    <h5 class="card-title">Total Customers</h5>
+                    <h3 class="text-success">${dashboardStats.totalCustomers}</h3>
+                    <small class="text-muted">Active users</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="fas fa-calendar-check fa-2x text-info mb-2"></i>
+                    <h5 class="card-title">Total Bookings</h5>
+                    <h3 class="text-info">${dashboardStats.totalBookings}</h3>
+                    <small class="text-muted">All time</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="fas fa-percentage fa-2x text-warning mb-2"></i>
+                    <h5 class="card-title">Utilization Rate</h5>
+                    <h3 class="text-warning">
+                        <fmt:formatNumber value="${(dashboardStats.totalCars - dashboardStats.availableCars) / dashboardStats.totalCars * 100}" 
+                                          maxFractionDigits="1" />%
+                    </h3>
+                    <small class="text-muted">Cars in use</small>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Vendor js -->
-    <jsp:include page="meta/scripts.jsp"/>
-    
-    <!-- Plugins js-->
-    <script src="/static/assets/libs/morris-js/morris.min.js"></script>
-    <script src="/static/assets/libs/raphael/raphael.min.js"></script>
-    
-    <script>
-        $(document).ready(function() {
-            // Get token from localStorage
-            var token = localStorage.getItem('token');
-            
-            if (!token) {
-                window.location.href = '/login';
-                return;
-            }
-            
-            // Load recent bookings
-            $.ajax({
-                url: '/api/dashboard/recent-bookings',
-                type: 'GET',
-                headers: {
-                    'Authorization': 'Bearer ' + token
-                },
-                success: function(data) {
-                    var tableBody = $('#recent-bookings-table');
-                    tableBody.empty();
-                    
-                    if (data.length === 0) {
-                        tableBody.append('<tr><td colspan="6" class="text-center">No recent bookings found</td></tr>');
-                        return;
-                    }
-                    
-                    $.each(data, function(index, booking) {
-                        var statusClass = '';
-                        switch(booking.status) {
-                            case 'PENDING':
-                                statusClass = 'badge-warning';
-                                break;
-                            case 'CONFIRMED':
-                                statusClass = 'badge-info';
-                                break;
-                            case 'ACTIVE':
-                                statusClass = 'badge-primary';
-                                break;
-                            case 'COMPLETED':
-                                statusClass = 'badge-success';
-                                break;
-                            case 'CANCELLED':
-                                statusClass = 'badge-danger';
-                                break;
-                        }
-                        
-                        var row = '<tr>' +
-                            '<td><a href="/booking/' + booking.id + '">' + booking.bookingNumber + '</a></td>' +
-                            '<td>' + booking.customerName + '</td>' +
-                            '<td>' + booking.carName + '</td>' +
-                            '<td><span class="badge ' + statusClass + '">' + booking.status + '</span></td>' +
-                            '<td>$' + booking.totalAmount + '</td>' +
-                            '<td><a href="/booking/' + booking.id + '" class="btn btn-xs btn-light"><i class="mdi mdi-eye"></i></a></td>' +
-                            '</tr>';
-                        
-                        tableBody.append(row);
-                    });
-                },
-                error: function() {
-                    $('#recent-bookings-table').html('<tr><td colspan="6" class="text-center">Error loading bookings</td></tr>');
-                }
-            });
-            
-            // Load car status chart
-            $.ajax({
-                url: '/api/dashboard/stats',
-                type: 'GET',
-                headers: {
-                    'Authorization': 'Bearer ' + token
-                },
-                success: function(data) {
-                    Morris.Donut({
-                        element: 'car-status-chart',
-                        data: [
-                            {label: "Available", value: data.availableCars},
-                            {label: "Booked", value: data.totalCars - data.availableCars}
-                        ],
-                        colors: ['#10c469', '#ff5b5b'],
-                        resize: true
-                    });
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+    <!-- Charts and Tables Row -->
+    <div class="row">
+        <!-- Earnings by Car This Month -->
+        <div class="col-xl-6 col-lg-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-car me-2"></i>Earnings by Car (This Month)
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <c:choose>
+                        <c:when test="${not empty dashboardStats.monthlyCarPerformance}">
+                            <div class="table-responsive">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Car Name</th>
+                                            <th class="text-end">Monthly Earnings</th>
+                                            <th width="40%">Performance</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <c:forEach items="${dashboardStats.monthlyCarPerformance}" var="carEarning" varStatus="status">
+                                            <c:if test="${status.index < 10}">
+                                                <tr>
+                                                    <td>${carEarning.carName}</td>
+                                                    <td class="text-end">
+                                                        ₹<fmt:formatNumber value="${carEarning.totalEarnings}" type="number" maxFractionDigits="2" minFractionDigits="2" />
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress" style="height: 20px;">
+                                                            <div class="progress-bar bg-success"
+                                                                 role="progressbar"
+                                                                 style="width: ${carEarning.totalEarnings / dashboardStats.monthlyCarPerformance[0].totalEarnings * 100}%">
+                                                                <fmt:formatNumber value="${carEarning.totalEarnings / dashboardStats.monthlyCarPerformance[0].totalEarnings * 100}"
+                                                                                  maxFractionDigits="1" />%
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </c:if>
+                                        </c:forEach>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </c:when>
+                        <c:otherwise>
+                            <div class="text-center py-4">
+                                <i class="fas fa-car fa-3x text-muted mb-3"></i>
+                                <p class="text-muted">No monthly earnings data available</p>
+                            </div>
+                        </c:otherwise>
+                    </c:choose>
+                </div>
+            </div>
+        </div>
+
+        <!-- Earnings by Car Chart (All Time) -->
+        <div class="col-xl-6 col-lg-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-chart-bar me-2"></i>Earnings by Car (All Time)
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <c:choose>
+                        <c:when test="${not empty dashboardStats.earningsByCar}">
+                            <div class="table-responsive">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Car Name</th>
+                                            <th class="text-end">Total Earnings</th>
+                                            <th width="40%">Performance</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <c:forEach items="${dashboardStats.earningsByCar}" var="carEarning" varStatus="status">
+                                            <c:if test="${status.index < 10}">
+                                                <tr>
+                                                    <td>${carEarning.carName}</td>
+                                                    <td class="text-end">
+                                                        ₹<fmt:formatNumber value="${carEarning.totalEarnings}" type="number" maxFractionDigits="2" minFractionDigits="2" />
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress" style="height: 20px;">
+                                                            <div class="progress-bar bg-primary"
+                                                                 role="progressbar"
+                                                                 style="width: ${carEarning.totalEarnings / dashboardStats.earningsByCar[0].totalEarnings * 100}%">
+                                                                <fmt:formatNumber value="${carEarning.totalEarnings / dashboardStats.earningsByCar[0].totalEarnings * 100}"
+                                                                                  maxFractionDigits="1" />%
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </c:if>
+                                        </c:forEach>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </c:when>
+                        <c:otherwise>
+                            <div class="text-center py-4">
+                                <i class="fas fa-chart-bar fa-3x text-muted mb-3"></i>
+                                <p class="text-muted">No earnings data available</p>
+                            </div>
+                        </c:otherwise>
+                    </c:choose>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Bookings Row -->
+    <div class="row mt-4">
+        <!-- Recent Bookings -->
+        <div class="col-xl-4 col-lg-5">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-clock me-2"></i>Recent Bookings
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <c:choose>
+                        <c:when test="${not empty recentBookings}">
+                            <c:forEach items="${recentBookings}" var="booking">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0">
+                                        <span class="badge bg-${booking.bookingStatus == 'COMPLETED' ? 'success' : 
+                                                                booking.bookingStatus == 'CONFIRMED' ? 'primary' : 
+                                                                booking.bookingStatus == 'PENDING' ? 'warning' : 'danger'} 
+                                                     status-badge">
+                                            ${booking.bookingStatus}
+                                        </span>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h6 class="mb-0">${booking.car.name}</h6>
+                                        <small class="text-muted">
+                                            ${booking.customer.name} •
+                                            <fmt:formatDate value="${dateUtils.timestampToDate(booking.startDate)}" pattern="MMM dd" />
+                                        </small>
+                                    </div>
+                                    <div class="flex-shrink-0">
+                                        <strong>₹<fmt:formatNumber value="${booking.earningAmount}" type="number" maxFractionDigits="2" minFractionDigits="2" /></strong>
+                                    </div>
+                                </div>
+                            </c:forEach>
+                            <div class="text-center mt-3">
+                                <a href="/bookings" class="btn btn-outline-primary btn-sm">
+                                    View All Bookings
+                                </a>
+                            </div>
+                        </c:when>
+                        <c:otherwise>
+                            <div class="text-center py-4">
+                                <i class="fas fa-calendar-times fa-3x text-muted mb-3"></i>
+                                <p class="text-muted">No recent bookings</p>
+                            </div>
+                        </c:otherwise>
+                    </c:choose>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Monthly Car Performance -->
+    <c:if test="${not empty dashboardStats.monthlyCarPerformance}">
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-trophy me-2"></i>Current Month Car Performance
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Car Name</th>
+                                        <th class="text-end">Monthly Earnings</th>
+                                        <th width="30%">Performance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <c:forEach items="${dashboardStats.monthlyCarPerformance}" var="carPerformance" varStatus="status">
+                                        <tr>
+                                            <td>
+                                                <span class="badge bg-${status.index == 0 ? 'warning' : status.index == 1 ? 'secondary' : status.index == 2 ? 'dark' : 'light text-dark'}">
+                                                    #${status.index + 1}
+                                                </span>
+                                            </td>
+                                            <td>${carPerformance.carName}</td>
+                                            <td class="text-end">
+                                                ₹<fmt:formatNumber value="${carPerformance.totalEarnings}" type="number" maxFractionDigits="2" minFractionDigits="2" />
+                                            </td>
+                                            <td>
+                                                <div class="progress" style="height: 20px;">
+                                                    <div class="progress-bar bg-success" 
+                                                         role="progressbar" 
+                                                         style="width: ${carPerformance.totalEarnings / dashboardStats.monthlyCarPerformance[0].totalEarnings * 100}%">
+                                                        <fmt:formatNumber value="${carPerformance.totalEarnings / dashboardStats.monthlyCarPerformance[0].totalEarnings * 100}" 
+                                                                          maxFractionDigits="1" />%
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </c:forEach>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </c:if>
+</sec:authorize>
+
+<!-- Customer Dashboard -->
+<sec:authorize access="hasRole('CUSTOMER')">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body text-center py-5">
+                    <i class="fas fa-user-circle fa-4x text-primary mb-4"></i>
+                    <h3>Welcome, <sec:authentication property="name" />!</h3>
+                    <p class="lead text-muted mb-4">
+                        Manage your car rental bookings and view your rental history.
+                    </p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <a href="/my-bookings" class="btn btn-primary btn-lg w-100">
+                                        <i class="fas fa-calendar-check me-2"></i>
+                                        My Bookings
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <a href="/profile" class="btn btn-outline-primary btn-lg w-100">
+                                        <i class="fas fa-user-edit me-2"></i>
+                                        Update Profile
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</sec:authorize>
+
+<jsp:include page="common/footer.jsp" />

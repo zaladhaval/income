@@ -4,140 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90733c57-6788-407c-adef-fea15e046196" name="Changes" comment="Template updated">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingStatusRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/PaymentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/config/DataInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/UserCreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/UserUpdateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/dashboard/DashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/dashboard/DashboardStats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/dashboard/RecentBookingDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/BookingStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/BookingStatusConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/CarStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/CarStatusConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/JwtRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/JwtRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/JwtResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/JwtTokenUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/MessageResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/SignupRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/UserSecurity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/security/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dashboard.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meta/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/test.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/RentalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/RentalApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/Bookings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/Bookings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsRestOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsRestOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/bookings/BookingsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarRestOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarRestOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/car/CarServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/customer/IncomeUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/FuleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/FuleType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/enums/UserType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/web/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/web/ViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="e355546a-88a8-4595-8f0c-02e68dcc56f4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
-    <option name="myAllFileTypesSelected" value="false" />
-    <option name="mySelectedFileTypes">
-      <set>
-        <option value="JAVA" />
-        <option value="Java module" />
-      </set>
-    </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="WARN_ABOUT_CRLF" value="false" />
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/rental/config/SecurityConfig.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2tAmM30WCnHJVAIY6u4FxE1vav7" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="30MCEXUiOjbBnjOJ7GnUJeg9aB8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.RentalApplication (1).executor": "Debug",
-    "Spring Boot.RentalApplication.executor": "Debug",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/home/dhaval/Development/projects/My/rental/src/main/java/com/car/rental",
-    "last_opened_file_path": "/home/dhaval/Development/projects/My/rental/src/main/webapp/WEB-INF/jsp/meta",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;Database connection parameters found&quot;,
+    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.RentalApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dhaval-zala/Development/projects/rental&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meta" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.car.rental.callcontext" />
-    </key>
-  </component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -146,10 +63,9 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="RentalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <option name="ACTIVE_PROFILES" value="dev" />
+    <configuration name="RentalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="rental" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.car.rental.RentalApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rental.RentalApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -158,130 +74,28 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
       </set>
     </attachedChunks>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="90733c57-6788-407c-adef-fea15e046196" name="Changes" comment="" />
-      <created>1739803201604</created>
+      <changelist id="e355546a-88a8-4595-8f0c-02e68dcc56f4" name="Changes" comment="" />
+      <created>1753427943208</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1739803201604</updated>
-      <workItem from="1739803202634" duration="10089000" />
-      <workItem from="1739899228214" duration="10269000" />
-      <workItem from="1745001857005" duration="3691000" />
+      <updated>1753427943208</updated>
+      <workItem from="1753427944569" duration="179000" />
+      <workItem from="1753428203145" duration="3228000" />
+      <workItem from="1753635237370" duration="7105000" />
+      <workItem from="1753675872426" duration="448000" />
+      <workItem from="1753682243989" duration="60000" />
+      <workItem from="1753685002138" duration="604000" />
     </task>
-    <task id="LOCAL-00001" summary="init">
-      <option name="closed" value="true" />
-      <created>1739803457135</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1739803457135</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Crude added">
-      <option name="closed" value="true" />
-      <created>1739813062534</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1739813062534</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Crude added">
-      <option name="closed" value="true" />
-      <created>1739816240427</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1739816240427</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Crude added">
-      <option name="closed" value="true" />
-      <created>1739816249963</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1739816249963</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Crude added">
-      <option name="closed" value="true" />
-      <created>1739899589956</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1739899589956</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Template updated">
-      <option name="closed" value="true" />
-      <created>1739908099324</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1739908099324</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Template updated">
-      <option name="closed" value="true" />
-      <created>1745003133702</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1745003133702</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Template updated">
-      <option name="closed" value="true" />
-      <created>1745003239721</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1745003239721</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="init" />
-    <MESSAGE value="Crude added" />
-    <MESSAGE value="Template updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Template updated" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/car/rental/config/CustomRequestMappingHandlerMapping.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/car/rental/security/AuthController.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

@@ -1,120 +1,226 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Car Rental - Login</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Car Rental Application" name="description" />
-    <meta content="Car Rental" name="author" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Login - Car Rental Management System</title>
     
-    <!-- App favicon -->
-    <link rel="shortcut icon" href="/static/assets/images/favicon.ico">
-
-    <!-- App css -->
-    <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="/static/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <link href="/static/assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link href="/webjars/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .login-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .login-header {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .login-body {
+            padding: 2rem;
+        }
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        .btn-login {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            border: none;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .btn-login:hover {
+            background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+            transform: translateY(-1px);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        }
+        .demo-credentials {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+        }
+        .demo-credentials h6 {
+            color: #495057;
+            margin-bottom: 0.5rem;
+        }
+        .demo-credentials .credential-item {
+            margin-bottom: 0.25rem;
+        }
+        .demo-credentials .credential-item strong {
+            color: #007bff;
+        }
+    </style>
 </head>
-
-<body class="authentication-bg authentication-bg-pattern">
-    <div class="account-pages mt-5 mb-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6 col-xl-5">
-                    <div class="card bg-pattern">
-                        <div class="card-body p-4">
-                            <div class="text-center w-75 m-auto">
-                                <div class="auth-logo">
-                                    <a href="/" class="logo logo-dark text-center">
-                                        <span class="logo-lg">
-                                            <h3>Car Rental</h3>
-                                        </span>
-                                    </a>
-                                </div>
-                                <p class="text-muted mb-4 mt-3">Enter your username and password to access the admin panel.</p>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="login-container">
+                    <div class="login-header">
+                        <i class="fas fa-car fa-3x mb-3"></i>
+                        <h2 class="mb-0">Car Rental System</h2>
+                        <p class="mb-0 opacity-75">Management Portal</p>
+                    </div>
+                    
+                    <div class="login-body">
+                        <!-- Error Messages -->
+                        <c:if test="${param.error != null}">
+                            <div class="alert alert-danger" role="alert">
+                                <i class="fas fa-exclamation-circle me-2"></i>
+                                Invalid email or password. Please try again.
                             </div>
-
-                            <div id="error-message" class="alert alert-danger" style="display: none;"></div>
-
-                            <form id="login-form">
-                                <div class="form-group mb-3">
-                                    <label for="username">Username</label>
-                                    <input class="form-control" type="text" id="username" required placeholder="Enter your username">
+                        </c:if>
+                        
+                        <c:if test="${param.logout != null}">
+                            <div class="alert alert-success" role="alert">
+                                <i class="fas fa-check-circle me-2"></i>
+                                You have been successfully logged out.
+                            </div>
+                        </c:if>
+                        
+                        <!-- Login Form -->
+                        <form action="/login" method="post" id="loginForm">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    <i class="fas fa-envelope me-2"></i>Email Address
+                                </label>
+                                <input type="email" 
+                                       class="form-control form-control-lg" 
+                                       id="email" 
+                                       name="email" 
+                                       placeholder="Enter your email"
+                                       required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="password" class="form-label">
+                                    <i class="fas fa-lock me-2"></i>Password
+                                </label>
+                                <div class="input-group">
+                                    <input type="password" 
+                                           class="form-control form-control-lg" 
+                                           id="password" 
+                                           name="password" 
+                                           placeholder="Enter your password"
+                                           required>
+                                    <button class="btn btn-outline-secondary" 
+                                            type="button" 
+                                            id="togglePassword">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
-
-                                <div class="form-group mb-3">
-                                    <label for="password">Password</label>
-                                    <input class="form-control" type="password" required id="password" placeholder="Enter your password">
-                                </div>
-
-                                <div class="form-group mb-0 text-center">
-                                    <button class="btn btn-primary btn-block" type="submit"> Log In </button>
-                                </div>
-                            </form>
-                        </div> <!-- end card-body -->
+                            </div>
+                            
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input" 
+                                       id="remember-me" 
+                                       name="remember-me">
+                                <label class="form-check-label" for="remember-me">
+                                    Remember me
+                                </label>
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg btn-login">
+                                    <i class="fas fa-sign-in-alt me-2"></i>Sign In
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <!-- Demo Credentials -->
+                        <div class="demo-credentials">
+                            <h6><i class="fas fa-info-circle me-2"></i>Demo Credentials</h6>
+                            <div class="credential-item">
+                                <strong>Admin:</strong> admin@rental.com / password123
+                            </div>
+                            <div class="credential-item">
+                                <strong>Technical:</strong> tech@rental.com / password123
+                            </div>
+                            <div class="credential-item">
+                                <strong>Customer:</strong> john.smith@email.com / password123
+                            </div>
+                        </div>
                     </div>
-                    <!-- end card -->
-
-                    <div class="row mt-3">
-                        <div class="col-12 text-center">
-                            <p class="text-white-50">Don't have an account? <a href="/register" class="text-white ml-1"><b>Sign Up</b></a></p>
-                        </div> <!-- end col -->
-                    </div>
-                    <!-- end row -->
-                </div> <!-- end col -->
+                </div>
+                
+                <!-- Footer -->
+                <div class="text-center mt-4">
+                    <p class="text-white-50">
+                        &copy; 2024 Car Rental Management System. All rights reserved.
+                    </p>
+                </div>
             </div>
-            <!-- end row -->
         </div>
-        <!-- end container -->
     </div>
-    <!-- end page -->
 
-    <footer class="footer footer-alt">
-        <script>document.write(new Date().getFullYear())</script> &copy; Car Rental by <a href="#" class="text-white-50">Car Rental</a> 
-    </footer>
-
-    <!-- Vendor js -->
-    <script src="/static/assets/js/vendor.min.js"></script>
-
-    <!-- App js -->
-    <script src="/static/assets/js/app.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/webjars/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     
     <script>
         $(document).ready(function() {
-            $('#login-form').submit(function(e) {
-                e.preventDefault();
+            // Toggle password visibility
+            $('#togglePassword').click(function() {
+                const passwordField = $('#password');
+                const passwordFieldType = passwordField.attr('type');
+                const toggleIcon = $(this).find('i');
                 
-                var username = $('#username').val();
-                var password = $('#password').val();
-                
-                $.ajax({
-                    type: 'POST',
-                    url: '/api/auth/login',
-                    contentType: 'application/json',
-                    data: JSON.stringify({
-                        username: username,
-                        password: password
-                    }),
-                    success: function(response) {
-                        // Store token in localStorage
-                        localStorage.setItem('token', response.token);
-                        
-                        // Redirect to dashboard
-                        window.location.href = '/dashboard';
-                    },
-                    error: function(xhr) {
-                        // Display error message
-                        var errorMessage = 'Invalid username or password';
-                        if (xhr.responseJSON && xhr.responseJSON.message) {
-                            errorMessage = xhr.responseJSON.message;
-                        }
-                        
-                        $('#error-message').text(errorMessage).show();
-                    }
-                });
+                if (passwordFieldType === 'password') {
+                    passwordField.attr('type', 'text');
+                    toggleIcon.removeClass('fa-eye').addClass('fa-eye-slash');
+                } else {
+                    passwordField.attr('type', 'password');
+                    toggleIcon.removeClass('fa-eye-slash').addClass('fa-eye');
+                }
             });
+            
+            // Form validation
+            $('#loginForm').on('submit', function(e) {
+                const email = $('#email').val().trim();
+                const password = $('#password').val().trim();
+                
+                if (!email || !password) {
+                    e.preventDefault();
+                    alert('Please fill in all required fields.');
+                    return false;
+                }
+                
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    e.preventDefault();
+                    alert('Please enter a valid email address.');
+                    $('#email').focus();
+                    return false;
+                }
+            });
+            
+            // Auto-hide alerts after 5 seconds
+            setTimeout(function() {
+                $('.alert').fadeOut('slow');
+            }, 5000);
+            
+            // Focus on email field
+            $('#email').focus();
         });
     </script>
 </body>
