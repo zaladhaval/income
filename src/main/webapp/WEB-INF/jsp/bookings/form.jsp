@@ -118,10 +118,10 @@
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="earningAmount" class="form-label">
-                                        <i class="fas fa-dollar-sign me-1"></i>Daily Rate <span class="text-danger">*</span>
+                                        <i class="fas fa-rupee-sign me-1"></i>Daily Rate <span class="text-danger">*</span>
                                     </label>
                                     <div class="input-group">
-                                        <span class="input-group-text">$</span>
+                                        <span class="input-group-text">₹</span>
                                         <form:input path="earningAmount" class="form-control" type="number" 
                                                    step="0.01" min="0" required="true" placeholder="0.00"/>
                                         <div class="invalid-feedback">
@@ -208,6 +208,20 @@
         var forms = document.getElementsByClassName('needs-validation');
         var validation = Array.prototype.filter.call(forms, function(form) {
             form.addEventListener('submit', function(event) {
+                // Ensure hidden date fields are populated before submission
+                const startDateInput = document.getElementById('startDate');
+                const endDateInput = document.getElementById('endDate');
+
+                if (startDateInput.value) {
+                    const startDate = new Date(startDateInput.value);
+                    document.getElementById('startDateHidden').value = startDate.getTime();
+                }
+
+                if (endDateInput.value) {
+                    const endDate = new Date(endDateInput.value);
+                    document.getElementById('endDateHidden').value = endDate.getTime();
+                }
+
                 if (form.checkValidity() === false) {
                     event.preventDefault();
                     event.stopPropagation();
@@ -223,12 +237,14 @@ document.getElementById('startDate').addEventListener('change', function() {
     const selectedDate = new Date(this.value);
     const timestamp = selectedDate.getTime();
     document.getElementById('startDateHidden').value = timestamp;
+    console.log('Start date set to:', timestamp);
 });
 
 document.getElementById('endDate').addEventListener('change', function() {
     const selectedDate = new Date(this.value);
     const timestamp = selectedDate.getTime();
     document.getElementById('endDateHidden').value = timestamp;
+    console.log('End date set to:', timestamp);
 });
 
 // Initialize hidden fields on page load
