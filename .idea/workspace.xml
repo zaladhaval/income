@@ -4,7 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e355546a-88a8-4595-8f0c-02e68dcc56f4" name="Changes" comment="" />
+    <list default="true" id="e355546a-88a8-4595-8f0c-02e68dcc56f4" name="Changes" comment="Init new application">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/controller/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/controller/BookingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/controller/CarController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/controller/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/controller/DashboardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/controller/ExpenseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/dto/CarEarningsDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/dto/DashboardStatsDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/entity/Booking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/entity/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/entity/Expense.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/enums/BookingStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/enums/FuelType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/enums/GearType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/enums/UserType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/repository/BookingRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/repository/CarRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/repository/ExpenseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/service/BookingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/service/CarService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/service/DashboardService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/service/ExpenseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/util/DateUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rental/util/PasswordGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookings/detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookings/form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookings/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cars/detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cars/form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cars/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customers/detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customers/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dashboard.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/expenses/form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/expenses/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/fragments/dashboard-stats.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +63,21 @@
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zaladhaval&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zaladhaval/income.git&quot;,
+    &quot;accountId&quot;: &quot;665b56f2-4029-4919-8fe2-9acd74d8c919&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/com/rental/config/SecurityConfig.java" root0="SKIP_INSPECTION" />
   </component>
@@ -34,27 +99,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;Database connection parameters found&quot;,
-    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.RentalApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/dhaval-zala/Development/projects/rental&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "Database connection parameters found",
+    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.RentalApplication.executor": "Debug",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/dhaval-zala/Development/projects/rental",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -74,8 +141,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.27812.49" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.27812.49" />
       </set>
     </attachedChunks>
   </component>
@@ -91,11 +158,53 @@
       <workItem from="1753635237370" duration="7105000" />
       <workItem from="1753675872426" duration="448000" />
       <workItem from="1753682243989" duration="60000" />
-      <workItem from="1753685002138" duration="604000" />
+      <workItem from="1753685002138" duration="2219000" />
+      <workItem from="1754586564211" duration="94000" />
     </task>
+    <task id="LOCAL-00001" summary="Init new application">
+      <option name="closed" value="true" />
+      <created>1753685819695</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1753685819695</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Init new application">
+      <option name="closed" value="true" />
+      <created>1753685838705</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1753685838705</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Init new application">
+      <option name="closed" value="true" />
+      <created>1753685889797</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1753685889797</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="Init new application" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init new application" />
   </component>
 </project>
